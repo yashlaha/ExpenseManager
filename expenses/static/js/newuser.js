@@ -10,7 +10,7 @@ $("#username").on('input',function(){
 		data : {uname:uname},
 		success : function(response){
 			if(response.count == 0){
-				$("#userres").html('<h5 style = "color:green">Username Available</h5>');
+				$("#userres").html('<h5 style = "color:green">*Username Available</h5>');
 				$("#createaccount").prop('disabled',false);
 			}
 			else{
